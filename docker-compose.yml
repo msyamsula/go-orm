@@ -1,0 +1,18 @@
+version: "3"
+
+services: 
+    go-orm:
+        image: go-orm
+        # container_name: go-orm
+        # hostname: go-orm
+        # ports: 
+        #     - 5000:5000
+        command: go run main/main.go
+
+
+    go-orm-nginx:
+        image: go-orm-nginx
+        container_name: go-orm-nginx
+        hostname: go-orm-nginx
+        ports: 
+            - 80:80

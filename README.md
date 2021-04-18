@@ -4,6 +4,9 @@ REQUIREMENTS
 1. go get gorm.io/driver/mysql: mysql driver
 2. go get gorm.io/gorm: orm for go-mysql
 3. go get github.com/gorilla/mux: for rest-api json
+4. Mysql database with user "root", password "mysql", dbname "gorm"
+    Table Person (id, name, address, account_id)
+    Table Account (id, username, password)
 
 DOCUMENTATION
 1. https://gorm.io/id_ID/docs/index.html (go orm package)

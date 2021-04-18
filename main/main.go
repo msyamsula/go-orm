@@ -13,7 +13,7 @@ import (
 
 func main() {
 	// mysql101.Crud()
-	connection.Connect("root", "mysql", "0.0.0.0", "3306", "gorm")
+	connection.Connect("root", "mysql", "host.docker.internal", "3306", "gorm")
 	ch := make(chan os.Signal, 1)
 	signal.Notify(ch, os.Interrupt)
 
