@@ -16,3 +16,4 @@ services:
         hostname: go-orm-nginx
         ports: 
             - 80:80
+            - 443:443
