@@ -14,10 +14,12 @@ import (
 )
 
 func Homelink(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Welcome Home")
+	fmt.Println("homepage is called")
+	fmt.Fprintf(w, "Welcome Home\n")
 }
 
 func GetPersonById(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("get person by id is called")
 	personId := mux.Vars(r)["id"]
 	db := connection.Db
 
@@ -41,6 +43,7 @@ func GetPersonById(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetAllPerson(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("get all person is called")
 	db := connection.Db
 
 	var persons []model.Person

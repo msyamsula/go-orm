@@ -11,3 +11,7 @@ COPY ./service service
 COPY ./go.mod go.mod
 
 RUN go mod tidy
+
+EXPOSE 5000
+
+CMD [ "go", "run", "main/main.go" ]
